@@ -98,3 +98,45 @@ Finally, I explored different categories of data, including volunteered, observa
 - Continue the Cisco Networking Academy course.
 - Learn how devices communicate using network protocols.
 - Build a stronger understanding of data transmission across different network media.
+
+---
+
+## Entry 003 - Networking Fundamentals (Book Study)
+
+**Date:** 24–25 July 2026
+
+**Focus:** Core networking concepts, network types, identification methods, and firewall fundamentals.
+
+### Topics Covered
+
+- Definition of a computer network
+- Endpoint devices
+- Network Interface Cards (NICs)
+- Network Operating Systems (NOS)
+- Network media
+- Hostnames, IP addresses and MAC addresses
+- Internet vs World Wide Web
+- Intranet
+- Extranet
+- Demilitarized Zones (DMZs)
+- Host-based firewalls
+- Network-based firewalls
+- Access Control Entries (ACEs)
+- Access Control Lists (ACLs)
+- Windows Firewall rules
+- Firewall logging
+- Firewall rule testing
+
+### Reflection
+
+I spent time studying networking fundamentals from *Networking Fundamentals* by Gordon Davies. I learned that a network is a collection of endpoint devices communicating over a shared medium, and that networking extends far beyond traditional computers to include Internet of Things (IoT) devices.
+
+I developed a clearer understanding of how devices are identified using hostnames, IP addresses and MAC addresses, as well as the distinction between the Internet, the World Wide Web, intranets and extranets. I also learned about DMZs and how they differ from extranets by exposing selected services to the public while protecting internal networks.
+
+The chapter introduced firewall concepts, including the differences between host-based and network-based firewalls. I learned that firewall rules are built from Access Control Entries (ACEs), which together form Access Control Lists (ACLs), and that rules can be applied to both inbound and outbound traffic. Finally, I learned the importance of verifying firewall configurations through testing and reviewing firewall logs rather than assuming a rule has been applied correctly.
+
+### Next Steps
+
+- Continue reading *Networking Fundamentals*.
+- Build a stronger understanding of network devices and topologies.
+- Reinforce these concepts through practical labs and packet analysis.
