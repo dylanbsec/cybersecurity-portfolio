@@ -38,3 +38,38 @@ I learned the distinction between Windows Desktop and Windows Server editions, t
 - Continue the Windows Fundamentals module.
 - Learn the Windows file system and directory structure.
 - Become familiar with common administrative tools and PowerShell.
+
+---
+
+## Entry 002 - Local & Remote Access
+
+**Date:** 27 July 2026
+
+**Focus:** Understanding how Windows systems are accessed locally and remotely.
+
+### Topics Covered
+
+- Local access
+- Remote access
+- VPN
+- SSH
+- FTP
+- VNC
+- Windows Remote Management (WinRM)
+- Remote Desktop Protocol (RDP)
+- Managed Service Providers (MSPs)
+- Managed Security Service Providers (MSSPs)
+
+### Reflection
+
+I learned the distinction between local and remote access to Windows systems. Local access involves interacting directly with a device using physical peripherals such as a keyboard, mouse and monitor, whereas remote access allows a system to be managed over a network.
+
+The lesson introduced several common remote administration technologies, including VPNs, SSH, FTP, VNC, WinRM and RDP, each of which provides different methods for connecting to and managing remote systems.
+
+I also spent additional time learning about Managed Service Providers (MSPs) and Managed Security Service Providers (MSSPs), as these were new concepts to me. I now understand that MSPs primarily provide outsourced IT support and infrastructure management, while MSSPs focus specifically on cybersecurity services such as monitoring, threat detection and incident response.
+
+### Next Steps
+
+- Continue the Windows Fundamentals module.
+- Learn when each remote access technology is commonly used.
+- Build a stronger understanding of Windows administration and enterprise environments.
