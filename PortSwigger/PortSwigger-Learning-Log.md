@@ -109,3 +109,36 @@ These exercises reinforced that client-side values such as JavaScript, cookies a
 - Continue the Access Control learning path.
 - Explore horizontal privilege escalation techniques.
 - Gain more experience identifying insecure client-side access control mechanisms.
+
+---
+
+## Entry 005 - Access Control: Horizontal Privilege Escalation
+
+**Date:** 29 July 2026
+
+**Focus:** Exploiting horizontal privilege escalation vulnerabilities and understanding how they can lead to administrative compromise.
+
+### Topics Covered
+
+- Horizontal privilege escalation
+- Insecure Direct Object References (IDOR)
+- GUID-based identifiers
+- Parameter tampering
+- Password disclosure
+- Horizontal to vertical privilege escalation
+
+### Reflection
+
+I continued the Access Control learning path in PortSwigger Web Security Academy and completed two practical labs covering horizontal privilege escalation.
+
+The first lab demonstrated an IDOR vulnerability where user accounts were identified using GUIDs instead of sequential IDs. Rather than following the walkthrough exactly, I inspected the page source to discover Carlos' GUID before modifying the `id` parameter to access his account and retrieve his API key. This was the first PortSwigger lab I completed entirely on my own, which gave me confidence that I am beginning to recognise vulnerabilities independently.
+
+The second lab demonstrated how horizontal privilege escalation can lead to vertical privilege escalation. By modifying the `id` parameter to reference the administrator's account, I was able to obtain the administrator's password from the page source, log in as the administrator and delete the user **carlos**.
+
+These labs reinforced that using GUIDs alone does not provide effective access control, and that sensitive information should never be exposed to users simply because a request parameter has been modified.
+
+### Next Steps
+
+- Continue the Access Control learning path.
+- Gain more experience identifying IDOR vulnerabilities.
+- Improve my use of Burp Suite alongside browser developer tools when analysing requests and responses.
