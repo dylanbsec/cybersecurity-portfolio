@@ -119,3 +119,48 @@ The biggest lesson from this lab wasn't the exploitation itself, but the importa
 - Continue the Hack The Box Starting Point labs.
 - Develop stronger enumeration habits before attempting exploitation.
 - Improve my understanding of remote services and Linux file systems.
+
+---
+
+## Entry 004 - Hack The Box: Fawn
+
+**Date:** 8 August 2026
+
+**Focus:** FTP enumeration and exploiting anonymous access on a misconfigured Linux machine.
+
+### Topics Covered
+
+- File Transfer Protocol (FTP)
+- FTP port 21
+- FTP vs SFTP
+- Network connectivity testing with `ping`
+- Service enumeration
+- Anonymous FTP authentication
+- FTP response codes
+- Navigating an FTP server
+- Downloading files from a remote server
+
+### Commands Practised
+
+- `ping` - Test connectivity to the target using ICMP.
+- `ftp -?` - Display help for the FTP client.
+- `ftp <target>` - Connect to a remote FTP server.
+- `anonymous` - Use anonymous authentication where permitted by the FTP server.
+- `ls` - List files available on the FTP server.
+- `get <filename>` - Download a file from the FTP server.
+
+### Reflection
+
+Today I completed the Hack The Box **Fawn** machine, which introduced FTP and demonstrated the security risks of allowing anonymous access to an FTP server.
+
+I used enumeration to identify **vsftpd 3.0.3** running on port **21** before connecting to the FTP service. The server was misconfigured to permit anonymous authentication, allowing me to access its contents without possessing a legitimate user account. I then navigated the FTP server and used `get` to retrieve the target file and complete the machine.
+
+My previous Linux practice definitely helped with this lab. Commands such as `ping` and `ls` were already familiar, which meant I could concentrate more on understanding FTP and the vulnerability being exploited.
+
+I completed Fawn using some hints and a walkthrough where needed. I am still finding connectivity to Hack The Box machines frustrating at times, as troubleshooting the connection can take time away from the actual lab. However, this is also giving me more experience distinguishing between problems with my own environment, the VPN connection and the target itself.
+
+### Next Steps
+
+- Continue the Hack The Box Starting Point machines.
+- Learn more about FTP enumeration and common misconfigurations.
+- Become more confident troubleshooting HTB connectivity independently.
