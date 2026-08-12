@@ -140,3 +140,42 @@ The chapter introduced firewall concepts, including the differences between host
 - Continue reading *Networking Fundamentals*.
 - Build a stronger understanding of network devices and topologies.
 - Reinforce these concepts through practical labs and packet analysis.
+
+---
+
+## Entry 004 - Bandwidth & Throughput
+
+**Date:** 12 August 2026
+
+**Focus:** Understanding network bandwidth, throughput, latency and the factors that affect real-world data transfer speeds.
+
+### Topics Covered
+
+- Bandwidth
+- Throughput
+- Bits per second (bps)
+- Kilobits per second (Kbps)
+- Megabits per second (Mbps)
+- Gigabits per second (Gbps)
+- Terabits per second (Tbps)
+- Network latency
+- Network bottlenecks
+- Factors affecting data transfer speeds
+
+### Reflection
+
+Today I continued studying networking fundamentals through Cisco Networking Academy, focusing on bandwidth and throughput.
+
+I learned that **bandwidth represents the theoretical capacity of a network medium to carry data**, typically measured in bits per second. Common measurements include Kbps, Mbps and Gbps.
+
+I also learned that **throughput represents the amount of data actually transferred over a connection during a given period**. Although a connection may have a particular bandwidth, its real-world throughput can be lower due to factors such as network traffic, the type of data being transmitted, latency and the devices encountered between the source and destination.
+
+An important concept was that a network path is limited by its slowest segment. Even if most of the connection supports high bandwidth, a lower-bandwidth section can become a bottleneck and reduce overall throughput.
+
+I also developed my understanding of **latency**, which refers to the time and delays involved in data travelling from one point to another.
+
+### Next Steps
+
+- Continue the Cisco Networking Basics course.
+- Develop my understanding of network performance and latency.
+- Apply these concepts when learning more about network troubleshooting and traffic analysis.
