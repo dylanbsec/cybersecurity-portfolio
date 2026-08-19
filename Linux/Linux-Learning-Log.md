@@ -113,3 +113,44 @@ These lessons reinforced that efficiency in the terminal should never come at th
 - Progress on to the Practice Piping module on pwn.college.
 - Become more comfortable combining globbing techniques.
 - Build habits that prioritise safe and accurate command-line usage.
+
+---
+
+## Entry 005 - Linux Input & Output Redirection
+
+**Date:** 19 August 2026
+
+**Focus:** Understanding Linux standard communication channels and redirecting command output.
+
+### Topics Covered
+
+- Standard Input (`stdin`)
+- Standard Output (`stdout`)
+- Standard Error (`stderr`)
+- Linux process input and output
+- Output redirection
+- The `>` redirection operator
+
+### Commands Practised
+
+- `echo` - Output text to standard output.
+- `>` - Redirect standard output from the terminal into a file.
+- `cat` - Display the contents of a file.
+
+### Reflection
+
+Today I started the pwn.college module on Linux input and output redirection.
+
+I learned that Linux processes have three standard communication channels: **stdin** for receiving input, **stdout** for normal output, and **stderr** for error messages.
+
+I then completed the first practical challenge on redirecting standard output. Instead of allowing the output from `echo` to appear in the terminal, I used the `>` operator to redirect it into a file:
+
+`echo PWN > COLLEGE`
+
+This helped demonstrate that command output does not necessarily have to be displayed on the terminal and can instead be redirected elsewhere.
+
+### Next Steps
+
+- Continue the pwn.college input and output redirection module.
+- Learn additional methods of redirecting `stdout` and `stderr`.
+- Explore how Linux commands can be chained together using their input and output streams.
