@@ -203,13 +203,13 @@ I also developed my understanding of **latency**, which refers to the time and d
 
 ### The Seven Layers
 
-7. **Application** - Network services used by applications and users, including protocols such as HTTP and HTTPS.
-6. **Presentation** - Prepares data for applications, including formatting, encoding and encryption.
-5. **Session** - Establishes, maintains and manages communication sessions between devices.
-4. **Transport** - Handles end-to-end data transport using protocols such as TCP and UDP.
-3. **Network** - Handles logical addressing and routing between networks using IP.
-2. **Data Link** - Handles communication between devices on the local network, including MAC addressing and Ethernet.
-1. **Physical** - Covers physical network components and signalling, including cables, fibre, connectors and network interfaces.
+Layer 7. **Application** - Network services used by applications and users, including protocols such as HTTP and HTTPS.
+Layer 6. **Presentation** - Prepares data for applications, including formatting, encoding and encryption.
+Layer 5. **Session** - Establishes, maintains and manages communication sessions between devices.
+Layer 4. **Transport** - Handles end-to-end data transport using protocols such as TCP and UDP.
+Layer 3. **Network** - Handles logical addressing and routing between networks using IP.
+Layer 2. **Data Link** - Handles communication between devices on the local network, including MAC addressing and Ethernet.
+Layer 1. **Physical** - Covers physical network components and signalling, including cables, fibre, connectors and network interfaces.
    
 ### Reflection
 
