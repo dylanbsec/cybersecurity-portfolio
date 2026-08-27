@@ -179,3 +179,51 @@ I also developed my understanding of **latency**, which refers to the time and d
 - Continue the Cisco Networking Basics course.
 - Develop my understanding of network performance and latency.
 - Apply these concepts when learning more about network troubleshooting and traffic analysis.
+
+---
+
+## Entry 005 - The OSI Reference Model
+
+**Date:** 27 August 2026
+
+**Focus:** Understanding the seven-layer OSI model and how it can be used to describe and troubleshoot network communication.
+
+### Topics Covered
+
+- OSI (Open Systems Interconnection) model
+- The seven OSI layers
+- Physical network infrastructure
+- MAC addressing
+- IP addressing and routing
+- TCP and UDP
+- Sessions between devices
+- Data presentation and encryption
+- Application-layer protocols
+- Using the OSI model for troubleshooting
+
+### The Seven Layers
+
+7. **Application** - Network services used by applications and users, including protocols such as HTTP and HTTPS.
+6. **Presentation** - Prepares data for applications, including formatting, encoding and encryption.
+5. **Session** - Establishes, maintains and manages communication sessions between devices.
+4. **Transport** - Handles end-to-end data transport using protocols such as TCP and UDP.
+3. **Network** - Handles logical addressing and routing between networks using IP.
+2. **Data Link** - Handles communication between devices on the local network, including MAC addressing and Ethernet.
+1. **Physical** - Covers physical network components and signalling, including cables, fibre, connectors and network interfaces.
+   
+### Reflection
+
+Today I studied Professor Messer's Network+ lesson on the **OSI Reference Model**.
+
+I learned that the OSI model divides network communication into seven conceptual layers, with each layer responsible for a different part of the communication process. Although real-world networking does not always divide perfectly into these layers, the model provides a useful framework for understanding how different technologies and protocols interact.
+
+I particularly found the troubleshooting aspect useful. Instead of treating a network problem as one large issue, the OSI model can help isolate where the problem might exist. For example, a Physical layer problem could involve a damaged cable or network adapter, while a Network layer problem could involve IP addressing or routing.
+
+I also reinforced several concepts I have encountered previously, including MAC addresses at Layer 2, IP addressing and routing at Layer 3, TCP and UDP at Layer 4, and protocols such as HTTP and HTTPS at Layer 7.
+
+### Next Steps
+
+- Continue Professor Messer's Network+ material.
+- Become more confident identifying which technologies and protocols operate at each OSI layer.
+- Apply the OSI model when practising network troubleshooting.
+- Compare the OSI model with the TCP/IP model.
