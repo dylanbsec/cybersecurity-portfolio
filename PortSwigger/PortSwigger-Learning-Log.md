@@ -142,3 +142,38 @@ These labs reinforced that using GUIDs alone does not provide effective access c
 - Continue the Access Control learning path.
 - Gain more experience identifying IDOR vulnerabilities.
 - Improve my use of Burp Suite alongside browser developer tools when analysing requests and responses.
+
+---
+
+## Entry 006 - Authentication Vulnerabilities
+
+**Date:** 28 August 2026
+
+**Focus:** Introduction to authentication vulnerabilities and brute-force attacks.
+
+### Topics Covered
+
+- Authentication vulnerabilities
+- Authentication vs authorisation
+- Authentication mechanisms
+- Brute-force attacks
+- Username and password wordlists
+- Automated credential guessing
+- Brute-force protection
+
+### Reflection
+
+Today I started the **Authentication Vulnerabilities** section of the PortSwigger Web Security Academy.
+
+I learned the distinction between **authentication and authorisation**. Authentication verifies that a user is who they claim to be, while authorisation determines what an authenticated user is permitted to access or do. This helped reinforce the access control concepts covered in my previous PortSwigger lessons.
+
+I also learned why authentication vulnerabilities can be particularly serious. Successfully bypassing authentication can provide an attacker with direct access to sensitive accounts, data and functionality, while potentially creating opportunities for further attacks.
+
+The lesson introduced **brute-force attacks**, where repeated attempts are made to discover valid credentials. These attacks can be automated using username and password wordlists rather than relying on completely random guesses. Publicly available information and logical assumptions can also make credential guessing significantly more targeted and efficient.
+
+### Next Steps
+
+- Continue the Authentication Vulnerabilities learning path.
+- Learn how usernames and passwords can be vulnerable to brute-force attacks.
+- Explore common protections against automated login attempts.
+- Complete the associated authentication labs.
