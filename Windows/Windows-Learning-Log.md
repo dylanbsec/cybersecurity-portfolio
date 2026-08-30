@@ -116,3 +116,88 @@ The module reinforced that troubleshooting is not simply about finding a technic
 - Gain practical experience troubleshooting common Windows issues.
 - Develop my understanding of Active Directory and domain environments.
 - Continue building familiarity with Microsoft 365 and Azure.
+
+---
+
+## Entry 004 - Windows Architecture & Client Devices
+
+**Date:** 30 August 2026
+
+**Focus:** Understanding Windows client hardware considerations and the fundamental architecture of the Windows operating system.
+
+### Topics Covered
+
+- Windows client device form factors
+- Hardware and support considerations
+- Device drivers
+- Windows operating system architecture
+- Windows Kernel
+- System services
+- Executive services
+- Application Programming Interfaces (APIs)
+- Win32 APIs
+- Windows Runtime (WinRT) APIs
+- Microsoft .NET Framework
+- Universal Windows Platform (UWP)
+- Relationship between applications, services, the kernel and hardware
+
+### Windows Architecture
+
+I learned that Windows can be viewed as several interacting layers:
+
+**Applications**
+- User-facing software operates at the upper level of Windows.
+- Applications communicate with Windows through APIs rather than directly controlling hardware.
+- Traditional desktop applications can use technologies including Win32 and .NET, while Windows Runtime provides APIs associated with modern Windows applications.
+
+**System Services**
+- Services perform operating system functions without requiring direct user interaction and can start before a user signs in.
+- Windows executive services provide core functionality such as I/O and virtual memory management.
+- Services generally interact with other software components, whereas device drivers provide an interface to hardware.
+
+**Windows Kernel**
+- The kernel is a fundamental part of the operating system that operates between higher-level Windows components and the computer's hardware.
+- It works closely with low-level device drivers and manages access to resources including the CPU and memory.
+- The kernel and low-level drivers initialise early during the Windows boot process.
+
+**Hardware**
+- At the lowest level are physical resources such as the CPU, memory, storage and other hardware devices.
+- Device drivers allow Windows to communicate with and control hardware.
+
+### Client Device Considerations
+
+I also explored how supporting Windows devices varies depending on their hardware and form factor.
+
+Important considerations include:
+
+- Processor performance
+- Available memory
+- Storage capacity
+- Battery life
+- Graphics capabilities
+- Displays and external monitors
+- USB and other expansion devices
+- Driver compatibility
+- Cloud storage and synchronisation
+- Security implications of removable and personally owned devices
+
+Different devices therefore introduce different support requirements rather than Windows support being identical across every computer.
+
+### Reflection
+
+Today I completed approximately the first half of Microsoft's **Explore Windows Architecture** module.
+
+Although the amount of course material completed was relatively small, I spent additional time researching concepts introduced by the architecture section rather than moving on without properly understanding them.
+
+In particular, I explored the **Windows Kernel, APIs, Win32, Windows Runtime and .NET Framework** in greater depth. This helped me understand the architecture as a connected system rather than simply memorising terminology.
+
+My main takeaway is that applications do not need to understand how to directly control every piece of hardware. Applications can request functionality through APIs and Windows components, with lower levels of the operating system ultimately managing the necessary system resources and hardware interaction.
+
+This has given me a much clearer mental model of what is happening underneath the Windows applications I use every day.
+
+### Next Steps
+
+- Complete the remainder of the Explore Windows Architecture module.
+- Study the Windows Registry and Registry Editor.
+- Continue developing my understanding of Windows system services and processes.
+- Reinforce the relationship between applications, APIs, operating system components, drivers and hardware.
