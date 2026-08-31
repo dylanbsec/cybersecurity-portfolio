@@ -201,3 +201,111 @@ This has given me a much clearer mental model of what is happening underneath th
 - Study the Windows Registry and Registry Editor.
 - Continue developing my understanding of Windows system services and processes.
 - Reinforce the relationship between applications, APIs, operating system components, drivers and hardware.
+
+---
+
+## Entry 005 - Windows Registry Fundamentals
+
+**Date:** 31 August 2026
+
+**Focus:** Understanding the structure, purpose and administration of the Windows Registry.
+
+### Topics Covered
+
+- Purpose of the Windows Registry
+- Registry hives
+- Keys and subkeys
+- Registry values and data types
+- `HKEY_LOCAL_MACHINE` (HKLM)
+- `HKEY_CURRENT_USER` (HKCU)
+- `HKEY_USERS`
+- `HKEY_CLASSES_ROOT`
+- `HKEY_CURRENT_CONFIG`
+- Registry Editor (`regedit`)
+- `.reg` files
+- Registry import and export
+- PowerShell registry management
+- Group Policy Preferences
+- Registry backup and recovery considerations
+- Remote registry management
+
+### Registry Structure
+
+I learned that the Windows Registry is a hierarchical database used to store user and computer configuration settings.
+
+Its structure can be understood as:
+
+- **Hives** - Top-level sections of the registry
+- **Keys and subkeys** - Containers used to organise related settings
+- **Values** - Individual configuration settings stored within keys
+
+The main hives covered were:
+
+- **HKEY_LOCAL_MACHINE (HKLM)** - Stores computer-wide configuration.
+- **HKEY_CURRENT_USER (HKCU)** - Stores configuration for the currently signed-in user.
+- **HKEY_USERS** - Stores configuration information for users who have signed in locally.
+- **HKEY_CLASSES_ROOT** - Contains file association and application-related information.
+- **HKEY_CURRENT_CONFIG** - Contains information about the hardware profile used during startup.
+
+### Registry Value Types
+
+I was introduced to several common registry value types:
+
+- `REG_BINARY` - Raw binary data.
+- `REG_DWORD` - 32-bit numerical values.
+- `REG_SZ` - Fixed-length text strings.
+- `REG_EXPAND_SZ` - Text strings that can contain variables.
+- `REG_MULTI_SZ` - Multiple text strings stored within one value.
+
+I learned that registry changes must use the correct path, value name and data type, as inaccurate changes can cause applications, devices or even Windows itself to behave incorrectly.
+
+### Registry Administration
+
+I learned several ways to manage the registry:
+
+- **Registry Editor (`regedit.exe`)** for direct manual changes.
+- **`.reg` files** for importing predefined registry changes.
+- **PowerShell** for navigating and modifying registry data programmatically.
+- **Group Policy Preferences** for deploying registry changes across many devices in an Active Directory environment.
+
+Example PowerShell commands included:
+
+`Set-Location HKCU:\Software\Example`
+
+`Set-ItemProperty . examplevaluename "assigned value"`
+
+I also learned that the registry can be treated like a filesystem through PowerShell's registry provider.
+
+### Safe Registry Management
+
+A major takeaway was the importance of caution when modifying the registry.
+
+Before making changes, good practice includes:
+
+- Backing up the affected registry key.
+- Exporting relevant registry data.
+- Creating a restore point where appropriate.
+- Confirming the exact registry path and value type.
+- Testing changes before deploying them widely.
+
+Incorrect registry changes can cause serious system instability or prevent Windows from starting.
+
+### Reflection
+
+Completing this section reinforced how important the Windows Registry is to understanding Windows administration and troubleshooting.
+
+The registry is not simply another configuration tool; it is a central database that affects users, applications, services, drivers, hardware behaviour and the operating system itself. Because of this, mistakes can have much greater consequences than changing a normal application setting.
+
+I also recognised how relevant registry knowledge is to both IT support and cybersecurity. Troubleshooting may require identifying incorrect or damaged configuration values, while security analysis can involve examining locations used for persistence, startup behaviour, services and user configuration.
+
+This is an area I expect to revisit in significantly more detail. I understand the overall structure and purpose of the registry now, but I want to become much more comfortable navigating it, recognising important paths and making controlled changes using both Registry Editor and PowerShell.
+
+For that reason, I consider this one of the more important Windows fundamentals modules I have completed so far rather than something I intend to study only once.
+
+### Next Steps
+
+- Revisit Windows Registry concepts as my Windows knowledge develops.
+- Practise navigating the registry safely in a lab environment.
+- Learn common registry locations used for Windows startup and services.
+- Gain more experience using PowerShell to read and modify registry values.
+- Explore how the registry is used during troubleshooting and security investigations.
